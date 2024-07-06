@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+.error{
+    background-color: red;
+}
+
+.country__input{
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+    width: 270px;
+    height: 40px;
+    transition: all .2s;
+    font-size: 22px;
+}
+
+.countries{
+    margin: 0 auto;
+    width: max-content;
+    font-size: 25px;
+}
+
+.info{
+    margin: 0 auto;
+    width: max-content;
+}
+.info__title{
+    font-size: 32px;
+    text-align: center;
+}
+.info__main{
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+.info__capital, .info__population, .info__lang, .info__lang{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.info__languages{
+    margin-left: 30px;
+    font-size: 21px;
+}
+.info__flag{
+    border: 1px solid grey;
+}
