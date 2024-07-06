@@ -615,13 +615,13 @@ document.querySelector(".country__input").addEventListener("input", _.debounce((
                 `);
             else error({
                 text: "Too many matches found! Please enter a more specific query!",
-                delay: 5000,
+                delay: 3000,
                 closer: false,
                 addClass: "error"
             });
         } else error({
             text: "No matches found! Please enter correct query!",
-            delay: 5000,
+            delay: 3000,
             closer: false,
             addClass: "error"
         });

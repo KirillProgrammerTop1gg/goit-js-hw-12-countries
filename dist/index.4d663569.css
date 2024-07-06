@@ -5,8 +5,13 @@
   font-family: cursive;
 }
 
+body {
+  background-color: gray;
+}
+
 .error {
-  background-color: red;
+  background-color: #d2000099;
+  border-radius: 15px;
 }
 
 .country__input {
@@ -50,9 +55,5 @@
 .info__languages {
   margin-left: 30px;
   font-size: 21px;
-}
-
-.info__flag {
-  border: 1px solid gray;
 }
 /*# sourceMappingURL=index.4d663569.css.map */

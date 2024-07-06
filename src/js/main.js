@@ -22,13 +22,6 @@ document.querySelector('.country__input').addEventListener('input', _.debounce((
                         <img src="${countries[0].flags.png}" alt="${countries[0].flags.alt}" class="info__flag">
                     </div>
                 `
-                // document.querySelector('.info__title').innerHTML = `${countries[0].name.common}`;
-                // document.querySelector('.info__capital').innerHTML = `${countries[0].capital}`
-                // document.querySelector('.info__population').innerHTML = `${countries[0].population}`
-                // document.querySelector('.info__languages').innerHTML = ``;
-                // Object.keys(countries[0].languages).forEach(lang => document.querySelector('.info__languages').innerHTML += `<li class="info__language">${countries[0].languages[`${lang}`]}</li>`)
-                // document.querySelector('.info__flag').setAttribute('src', countries[0].flags.png);
-                // document.querySelector('.info__flag').setAttribute('alt', countries[0].flags.alt)
             }
             else if(countries.length >= 2 && countries.length <= 10){
                 countries.forEach(country => document.querySelector('.countries').innerHTML += `
@@ -40,7 +33,7 @@ document.querySelector('.country__input').addEventListener('input', _.debounce((
             else {
                 error({
                     text: "Too many matches found! Please enter a more specific query!",
-                    delay: 5000,
+                    delay: 3000,
                     closer: false,
                     addClass: 'error'
                 });
@@ -49,7 +42,7 @@ document.querySelector('.country__input').addEventListener('input', _.debounce((
         else{
             error({
                 text: "No matches found! Please enter correct query!",
-                delay: 5000,
+                delay: 3000,
                 closer: false,
                 addClass: 'error'
             });
